@@ -25,6 +25,9 @@ driver.maximize_window()
 # value = driver.execute_script("return window.pageYOffset")
 # print("No.of.Pixels moved ", value)
 
+# scroll down till element is visible - Method-2
+# flag.location_once_scrolled_into_view
+
 # scroll till end of the page
 driver.execute_script("window.scrollBy(0, document.body.scrollHeight)")
 # value = driver.execute_script("return window.pageYOffset")

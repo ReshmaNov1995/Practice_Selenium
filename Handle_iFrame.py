@@ -12,7 +12,7 @@ driver.get("https://www.selenium.dev/selenium/docs/api/java/index.html?overview-
 
 driver.maximize_window()
 
-driver.switch_to.frame("packageListFrame")
+driver.switch_to.frame("packageListFrame") # name of iFrame has to be passed
 driver.find_element(By.LINK_TEXT, "org.openqa.selenium").click()
 
 # Note: driver can't navigate from 1 frame to the other frame.
