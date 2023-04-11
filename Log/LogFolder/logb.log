@@ -1,0 +1,5 @@
+2023-04-07 19:31:58,017: Am a debug log: DEBUG
+2023-04-07 19:31:58,017: Am a info log: INFO
+2023-04-07 19:31:58,018: Am a warning log: WARNING
+2023-04-07 19:31:58,018: Am a error log: ERROR
+2023-04-07 19:31:58,018: Am a critical log: CRITICAL

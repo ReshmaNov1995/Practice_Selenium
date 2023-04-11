@@ -1,0 +1,10 @@
+07/04/2023 07:35:50 PM: Am a debug log: DEBUG
+07/04/2023 07:35:50 PM: Am a info log: INFO
+07/04/2023 07:35:50 PM: Am a warning log: WARNING
+07/04/2023 07:35:50 PM: Am a error log: ERROR
+07/04/2023 07:35:50 PM: Am a critical log: CRITICAL
+07/04/2023 07:36:51 PM: DEBUG: Am a debug log
+07/04/2023 07:36:51 PM: INFO: Am a info log
+07/04/2023 07:36:51 PM: WARNING: Am a warning log
+07/04/2023 07:36:51 PM: ERROR: Am a error log
+07/04/2023 07:36:51 PM: CRITICAL: Am a critical log
