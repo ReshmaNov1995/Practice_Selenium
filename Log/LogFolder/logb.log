@@ -3,3 +3,8 @@
 2023-04-07 19:31:58,018: Am a warning log: WARNING
 2023-04-07 19:31:58,018: Am a error log: ERROR
 2023-04-07 19:31:58,018: Am a critical log: CRITICAL
+2023-05-28 10:37:18,489: Am a debug log: DEBUG
+2023-05-28 10:37:18,489: Am a info log: INFO
+2023-05-28 10:37:18,490: Am a warning log: WARNING
+2023-05-28 10:37:18,490: Am a error log: ERROR
+2023-05-28 10:37:18,490: Am a critical log: CRITICAL

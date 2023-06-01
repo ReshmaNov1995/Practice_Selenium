@@ -13,22 +13,26 @@ driver.get("http://www.deadlinkcity.com/")
 
 driver.maximize_window()
 
-# requests to be installed it's a pre-requesite
+# "requests" to be installed, it's a pre-requesite
 
 alllinks = driver.find_elements(By.XPATH, "//a")
-count = 0
+brokenLinkCount = 0
+validLinkCount = 0
 
 for link in alllinks:
     url = link.get_attribute("href")
     try:
         resp = requests.head(url)
+        print(resp)
     except:
-        None
+        pass
     if resp.status_code>=400:
         print(url, " is a Broken link")
-        count+=1
+        brokenLinkCount+=1
 
     else:
         print(url, " is a Valid link")
+        validLinkCount+=1
 
-print("Total no.of.Broken link is ", count)
+print("Total no.of.Broken link is ", brokenLinkCount)
+print("Total Valid link", validLinkCount)

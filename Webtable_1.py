@@ -1,7 +1,7 @@
 # count no.of.rows & columns
 # Read specific row & column data
 # Read all row & column data
-# Read data based on condition(List book name whose author is Amit
+# Read data based on condition(List book name whose author is Amit)
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -17,24 +17,24 @@ driver.get("https://testautomationpractice.blogspot.com/")
 
 driver.maximize_window()
 
-# count no.of.rows & columns
-
+# # count no.of.rows & columns
+#
 row = driver.find_elements(By.XPATH, "//table[@name='BookTable']//tr") # relative xpath
 noofrows = len(row)
-print(noofrows)
-
-# Columns will have header
+# print(noofrows)
+#
+# # Columns will have header
 column = driver.find_elements(By.XPATH, "//table[@name='BookTable']//th")
 noofcolumns = len(column)
-print(noofcolumns)
+# print(noofcolumns)
 
-# Read specific row & column data
-
+# # Read specific row & column data
+#
 # specific_data = driver.find_element(By.XPATH, "//table[@name='BookTable']//tr[5]/td[1]")
 # print(specific_data.text)
 
-# Read all row & column data
-
+# # Read all row & column data
+#
 # for r in range(2, noofrows+1):
 #     for c in range(1, noofcolumns+1):
 #         # Parameterised XPath, which means dynamic xpath. Injecting row & column values.
@@ -42,11 +42,11 @@ print(noofcolumns)
 #         print(data, end = '      ') # this end will represent data in table format
 #     print()
 
-# Read data based on condition(List book name whose author is Amit)
-
-for rw in range(2, noofrows+1):
-    authorName = driver.find_element(By.XPATH, "//table[@name='BookTable']/tbody/tr["+str(rw)+"]/td[2]").text
-    if authorName == "Amit":
-        bookName = driver.find_element(By.XPATH, "//table[@name='BookTable']/tbody/tr["+str(rw)+"]/td[1]").text
-        price = driver.find_element(By.XPATH, "//table[@name='BookTable']/tbody/tr["+str(rw)+"]/td[4]").text
-        print(bookName, "      ", authorName, "     ", price)
+# # Read data based on condition(List book name whose author is Amit)
+#
+# for rw in range(2, noofrows+1):
+#     authorName = driver.find_element(By.XPATH, "//table[@name='BookTable']/tbody/tr["+str(rw)+"]/td[2]").text
+#     if authorName == "Amit":
+#         bookName = driver.find_element(By.XPATH, "//table[@name='BookTable']/tbody/tr["+str(rw)+"]/td[1]").text
+#         price = driver.find_element(By.XPATH, "//table[@name='BookTable']/tbody/tr["+str(rw)+"]/td[4]").text
+#         print(bookName, "      ", authorName, "     ", price)

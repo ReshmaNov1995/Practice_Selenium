@@ -10,7 +10,7 @@ link="http://62.171.183.83:9096/QuaLISWeb/#/login"
 user_name="r1"
 password="123"
 
-@pytest.mark.parametrize("pass1,pass2,pass3",[(link,user_name,password),(link,user_name,password),(link,user_name,password)])
+@pytest.mark.parametrize("pass1,pass2,pass3",[(link,user_name,password),(link,user_name,password)]) # based on set of arguments[(args)], it will run.
 def test_lims_login(pass1,pass2,pass3):
     chrome_option = webdriver.ChromeOptions()
     chrome_option.add_experimental_option("detach", True)

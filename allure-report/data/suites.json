@@ -1,0 +1,47 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "test_Jenkins",
+    "children" : [ {
+      "name" : "Test_Basicpytest",
+      "children" : [ {
+        "name" : "test_demo1",
+        "uid" : "d61d08ca970fa918",
+        "parentUid" : "975527f2f140259eb18963dc1b158446",
+        "status" : "passed",
+        "time" : {
+          "start" : 1682854399641,
+          "stop" : 1682854399641,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 9,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_demo2",
+        "uid" : "2b1f100c8d4c022b",
+        "parentUid" : "975527f2f140259eb18963dc1b158446",
+        "status" : "passed",
+        "time" : {
+          "start" : 1682854399643,
+          "stop" : 1682854399643,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 9,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "975527f2f140259eb18963dc1b158446"
+    } ],
+    "uid" : "98b5a1cd75f38f32316155510436fb63"
+  } ]
+}

@@ -1,11 +1,16 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from webdriver_manager.chrome import ChromeDriverManager
 
-driver = webdriver.Chrome()
+chrome_Options = webdriver.ChromeOptions()
+chrome_Options.add_experimental_option("detach", True)
+
+driver = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_Options)
 
 driver.maximize_window()
 
 driver.get("https://demo.nopcommerce.com/")
+
 
 # Register button
 # Absolute Xpath

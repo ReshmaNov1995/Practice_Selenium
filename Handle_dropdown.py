@@ -22,24 +22,24 @@ country = Select(driver.find_element(By.XPATH, "//select[@id='input-country']"))
 
 # select option from dropdown
 
-# country.select_by_visible_text("India")
-# country.select_by_value("4") # America
-# country.select_by_index(13) # Australia
+country.select_by_visible_text("India")
+country.select_by_value("4") # America
+country.select_by_index(13) # Australia
 
 # Capture all the options & Print it
 
-# alloptions = country.options
-# print(len(alloptions))
-#
-# for option in alloptions:
-#     print(option.text)
+alloptions = country.options
+print(len(alloptions))
+
+for option in alloptions:
+    print(option.text)
 
 # Select option from dropdown without using built-in function
 
-# for option in alloptions:
-#     if option.text == "India":
-#         option.click()
-#         break
+for option in alloptions:
+    if option.text == "India":
+        option.click()
+        break
 
 # Actions without using Select class
 

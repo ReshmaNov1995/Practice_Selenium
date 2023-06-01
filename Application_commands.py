@@ -1,6 +1,11 @@
 from selenium import webdriver
 
-driver = webdriver.Chrome()
+from webdriver_manager.chrome import ChromeDriverManager
+
+chrome_Options = webdriver.ChromeOptions()
+chrome_Options.add_experimental_option("detach", True)
+
+driver = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_Options)
 
 driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
 

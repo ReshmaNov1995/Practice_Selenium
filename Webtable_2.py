@@ -44,7 +44,8 @@ print(rows)
 
 count = 0
 for i in range(1, rows+1):
-    status = driver.find_element(By.XPATH, "//div[@class='oxd-table-body']/div["+str(i)+"]/div/div[5]/div").text
+    # status = driver.find_element(By.XPATH, "//div[@class='oxd-table-body']/div["+str(i)+"]/div/div[5]/div").text
+    status = driver.find_element(By.XPATH, "//div[@class='oxd-table-body']/div/div/div["+str(i)+"]").text
     # print(status)
 
     if status == "Disabled":

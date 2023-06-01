@@ -38,8 +38,8 @@ while True:
         # driver.find_element(By.XPATH, "//*[@id='ui-datepicker-div']/div/a[2]/span").click()  # Next arrow
         driver.find_element(By.XPATH, "//*[@id='ui-datepicker-div']/div/a[1]/span").click() # Prev arrow
 
-# Select Date
 
+# Select Date
 dte = driver.find_elements(By.XPATH, "//table[@class='ui-datepicker-calendar']/tbody/tr/td/a")
 
 for i in dte:

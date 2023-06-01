@@ -1,7 +1,12 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from webdriver_manager.chrome import ChromeDriverManager
 
-driver = webdriver.Chrome()
+chrome_Options = webdriver.ChromeOptions()
+chrome_Options.add_experimental_option("detach", True)
+
+driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=chrome_Options)
+
 
 driver.get("https://money.rediff.com/gainers/bse/daily/groupa")
 
@@ -12,7 +17,7 @@ textmessage = driver.find_element(By.XPATH, "//a[contains(text(),'YES Bank Ltd.'
 print(textmessage)
 
 # parent
-textmessage = driver.find_element(By.XPATH, "//a[contains(text(),'One97 Communications')]/parent::td").text
+textmessage = driver.find_element(By.XPATH, "//td[text()='1,949.70']/parent::tr").text
 print(textmessage)
 
 # child

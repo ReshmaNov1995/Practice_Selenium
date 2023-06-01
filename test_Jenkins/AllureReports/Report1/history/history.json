@@ -1,0 +1,42 @@
+{
+  "e50a83623edc5931c3e2b220b851bc58" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d29f96f900aa8981",
+      "reportUrl" : "http://localhost:8080/job/AllureSample1/11/allure/#testresult/d29f96f900aa8981",
+      "status" : "passed",
+      "time" : {
+        "start" : 1682853095965,
+        "stop" : 1682853095965,
+        "duration" : 0
+      }
+    } ]
+  },
+  "428b5b99d26ea8b7a68089abb2b3a1bf" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "80935c066f448463",
+      "reportUrl" : "http://localhost:8080/job/AllureSample1/11/allure/#testresult/80935c066f448463",
+      "status" : "passed",
+      "time" : {
+        "start" : 1682853095960,
+        "stop" : 1682853095960,
+        "duration" : 0
+      }
+    } ]
+  }
+}
