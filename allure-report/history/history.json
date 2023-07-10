@@ -9,21 +9,21 @@
       "total" : 2
     },
     "items" : [ {
-      "uid" : "2b1f100c8d4c022b",
-      "reportUrl" : "http://localhost:8080/job/AllureSample1/12/allure/#testresult/2b1f100c8d4c022b",
+      "uid" : "d7bcd1e4923a4c4d",
+      "reportUrl" : "http://localhost:8080/job/BasicMail/2/allure/#testresult/d7bcd1e4923a4c4d",
       "status" : "passed",
       "time" : {
-        "start" : 1682854399643,
-        "stop" : 1682854399643,
-        "duration" : 0
+        "start" : 1685793298163,
+        "stop" : 1685793298164,
+        "duration" : 1
       }
     }, {
-      "uid" : "d29f96f900aa8981",
-      "reportUrl" : "http://localhost:8080/job/AllureSample1/11/allure/#testresult/d29f96f900aa8981",
+      "uid" : "c8d719a315b6572a",
+      "reportUrl" : "http://localhost:8080/job/BasicMail/1/allure/#testresult/c8d719a315b6572a",
       "status" : "passed",
       "time" : {
-        "start" : 1682853095965,
-        "stop" : 1682853095965,
+        "start" : 1685792426860,
+        "stop" : 1685792426860,
         "duration" : 0
       }
     } ]
@@ -38,21 +38,21 @@
       "total" : 2
     },
     "items" : [ {
-      "uid" : "d61d08ca970fa918",
-      "reportUrl" : "http://localhost:8080/job/AllureSample1/12/allure/#testresult/d61d08ca970fa918",
+      "uid" : "fd9282a04d9e0674",
+      "reportUrl" : "http://localhost:8080/job/BasicMail/2/allure/#testresult/fd9282a04d9e0674",
       "status" : "passed",
       "time" : {
-        "start" : 1682854399641,
-        "stop" : 1682854399641,
+        "start" : 1685793298160,
+        "stop" : 1685793298160,
         "duration" : 0
       }
     }, {
-      "uid" : "80935c066f448463",
-      "reportUrl" : "http://localhost:8080/job/AllureSample1/11/allure/#testresult/80935c066f448463",
+      "uid" : "e32cb5c85e09d682",
+      "reportUrl" : "http://localhost:8080/job/BasicMail/1/allure/#testresult/e32cb5c85e09d682",
       "status" : "passed",
       "time" : {
-        "start" : 1682853095960,
-        "stop" : 1682853095960,
+        "start" : 1685792426857,
+        "stop" : 1685792426857,
         "duration" : 0
       }
     } ]

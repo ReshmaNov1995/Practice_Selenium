@@ -22,9 +22,9 @@ def xldata():
         kk = []
         for j in range(1, max_column + 1):
             data = open_worksheet.cell(i, j).value
-            kk.insert(j, data)
+            kk.insert(j, data) #index, data
 
-        # print(kk)
+        print(kk)
         kkk.append(kk)
     return kkk
 

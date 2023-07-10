@@ -28,32 +28,32 @@ checkboxes = driver.find_elements(By.XPATH, "(//input[@type='checkbox' and conta
 for i in range(len(checkboxes)):
     checkboxes[i].click()
 
-# # Specifically multiple checkboxes as choice
-#
-# for checkbox in checkboxes: # weekdays - xpath of the elements
-#     weekday = checkbox.get_attribute('id') # from each xpath element retrieving particular attribute's value
-#     print(weekday)
-#     if weekday=='monday' or weekday=='saturday': # compare the retrieved value with required data
-#         time.sleep(5)
-#         checkbox.click()
+# Specifically multiple checkboxes as choice
 
-# # Select last 2 checkbox
-# # starting index = total(7)-required(2)---> 5
-#
-# for i in range(len(checkboxes)-2, len(checkboxes)): # range(len(5,7)) --> range(5,6)(Starts from 0)
-#     # checkboxes[i].click()
-#     print(i)
-# print(len(checkboxes))
+for checkbox in checkboxes: # weekdays - xpath of the elements
+    weekday = checkbox.get_attribute('id') # from each xpath element retrieving particular attribute's value
+    print(weekday)
+    if weekday=='monday' or weekday=='saturday': # compare the retrieved value with required data
+        time.sleep(5)
+        checkbox.click()
 
-# # Select first 2 checkbox
-#
-# for i in range(len(checkboxes)): # (0,6)
-#     if i<2:
-#         checkboxes[i].click()
+# Select last 2 checkbox
+# starting index = total(7)-required(2)---> 5
 
-# # Clearing all the checkboxes
-#
-# time.sleep(5)
-# for i in checkboxes:
-#     if i.is_selected():
-#         i.click()
+for i in range(len(checkboxes)-2, len(checkboxes)): # range(len(5,7)) --> range(5,6)(Starts from 0)
+    # checkboxes[i].click()
+    print(i)
+print(len(checkboxes))
+
+# Select first 2 checkbox
+
+for i in range(len(checkboxes)): # (0,6)
+    if i<2:
+        checkboxes[i].click()
+
+# Clearing all the checkboxes
+
+time.sleep(5)
+for i in checkboxes:
+    if i.is_selected():
+        i.click()

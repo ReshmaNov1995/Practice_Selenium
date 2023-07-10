@@ -3,36 +3,36 @@
   "name" : "behaviors",
   "children" : [ {
     "name" : "test_demo1",
-    "uid" : "d61d08ca970fa918",
+    "uid" : "fd9282a04d9e0674",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1682854399641,
-      "stop" : 1682854399641,
+      "start" : 1685793298160,
+      "stop" : 1685793298160,
       "duration" : 0
     },
     "flaky" : false,
     "newFailed" : false,
     "newPassed" : false,
     "newBroken" : false,
-    "retriesCount" : 9,
+    "retriesCount" : 1,
     "retriesStatusChange" : false,
     "parameters" : [ ]
   }, {
     "name" : "test_demo2",
-    "uid" : "2b1f100c8d4c022b",
+    "uid" : "d7bcd1e4923a4c4d",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1682854399643,
-      "stop" : 1682854399643,
-      "duration" : 0
+      "start" : 1685793298163,
+      "stop" : 1685793298164,
+      "duration" : 1
     },
     "flaky" : false,
     "newFailed" : false,
     "newPassed" : false,
     "newBroken" : false,
-    "retriesCount" : 9,
+    "retriesCount" : 1,
     "retriesStatusChange" : false,
     "parameters" : [ ]
   } ]

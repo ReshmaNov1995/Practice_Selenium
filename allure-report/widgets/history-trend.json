@@ -1,6 +1,6 @@
 [ {
-  "buildOrder" : 12,
-  "reportUrl" : "http://localhost:8080/job/AllureSample1/12/allure",
+  "buildOrder" : 2,
+  "reportUrl" : "http://localhost:8080/job/BasicMail/2/allure",
   "reportName" : "AllureReport",
   "data" : {
     "failed" : 0,
@@ -11,8 +11,8 @@
     "total" : 2
   }
 }, {
-  "buildOrder" : 11,
-  "reportUrl" : "http://localhost:8080/job/AllureSample1/11/allure",
+  "buildOrder" : 1,
+  "reportUrl" : "http://localhost:8080/job/BasicMail/1/allure",
   "reportName" : "AllureReport",
   "data" : {
     "failed" : 0,

@@ -1,11 +1,11 @@
 {
-  "uid" : "f79cf43ec672bef2",
+  "uid" : "fd9282a04d9e0674",
   "name" : "test_demo1",
   "fullName" : "test_Jenkins.Test_Basicpytest#test_demo1",
   "historyId" : "428b5b99d26ea8b7a68089abb2b3a1bf",
   "time" : {
-    "start" : 1682852656300,
-    "stop" : 1682852656300,
+    "start" : 1685793298160,
+    "stop" : 1685793298160,
     "duration" : 0
   },
   "status" : "passed",
@@ -13,7 +13,7 @@
   "newFailed" : false,
   "newBroken" : false,
   "newPassed" : false,
-  "retriesCount" : 0,
+  "retriesCount" : 1,
   "retriesStatusChange" : false,
   "beforeStages" : [ ],
   "afterStages" : [ ],
@@ -28,7 +28,7 @@
     "value" : "AGL113"
   }, {
     "name" : "thread",
-    "value" : "11832-MainThread"
+    "value" : "680-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -44,12 +44,42 @@
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : true,
-  "retry" : true,
+  "hidden" : false,
+  "retry" : false,
   "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "eaaceb353810bf4d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1685792426857,
+        "stop" : 1685792426857,
+        "duration" : 0
+      }
+    } ],
     "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "e32cb5c85e09d682",
+        "reportUrl" : "http://localhost:8080/job/BasicMail/1/allure/#testresult/e32cb5c85e09d682",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685792426857,
+          "stop" : 1685792426857,
+          "duration" : 0
+        }
+      } ]
+    },
     "tags" : [ ]
   },
-  "source" : "f79cf43ec672bef2.json",
+  "source" : "fd9282a04d9e0674.json",
   "parameterValues" : [ ]
 }
