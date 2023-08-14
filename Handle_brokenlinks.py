@@ -26,7 +26,7 @@ for link in alllinks:
         print(resp)
     except:
         pass
-    if resp.status_code>=400:
+    if resp.status_code>400:
         print(url, " is a Broken link")
         brokenLinkCount+=1
 

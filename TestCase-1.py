@@ -11,17 +11,17 @@
 import time
 from selenium import webdriver # webdriver is a module available in Selenium package
 from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.edge.service import Service
+from webdriver_manager.microsoft import EdgeChromiumDriverManager
 
 # This is used to stop the auto closure of chrome window after the script is executed.
-chrome_options=webdriver.ChromeOptions()
-chrome_options.add_experimental_option("detach",True)
+edge_options=webdriver.EdgeOptions()
+edge_options.add_experimental_option("detach",True)
 # service_obj = Service("E:\Automation\Drivers\chromedriver_win32\chromedriver.exe")
 # driver = webdriver.Chrome(service = service_obj,options = chrome_options)
 
 # webdriver-manager should be installed via settings.
-driver=webdriver.Chrome(service = Service(ChromeDriverManager().install()), options=chrome_options)
+driver=webdriver.Edge(service = Service(EdgeChromiumDriverManager().install()), options=edge_options)
 # This will automatically install the browserdrivers. so, versioning problem can be overcomed.
 
 # driver = webdriver.Chrome(executable_path="E:\Automation\Drivers\chromedriver_win32\chromedriver.exe")
