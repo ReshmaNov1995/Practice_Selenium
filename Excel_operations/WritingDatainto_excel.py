@@ -3,7 +3,7 @@ import openpyxl
 file = "E:\\Automation\\Data\\WriteWorksheet.xlsx"
 workbook = openpyxl.load_workbook(file)
 sheet = workbook["Sheet1"]
-# sheet = workbook.active # If there is only  sheet
+# sheet = workbook.active # If there is only sheet
 
 # Same Data
 # for r in range(1,6):

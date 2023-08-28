@@ -20,4 +20,4 @@ with open('E:\Myn\ddt2.csv') as cards:
 
 print(kkk)
 
-# Refer PyTest Folder->test_csvfiles.py
+# Refer PyTest Folder->test_parallel_csvfiles.py

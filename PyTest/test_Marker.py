@@ -33,7 +33,7 @@ def test_method5():
 def test_method6():
     print("Am a method 6")
     print(kk)
-    # raise Exception
+    raise Exception
 
 @pytest.mark.xfail(condition=a == 200, reason="condition is failed")
 def test_method6():

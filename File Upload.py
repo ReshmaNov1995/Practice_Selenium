@@ -1,13 +1,13 @@
 from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.chrome.service import Service
+from webdriver_manager.microsoft import EdgeChromiumDriverManager
+from selenium.webdriver.edge.service import Service
 
-chrome_option = webdriver.ChromeOptions()
-chrome_option.add_experimental_option("detach", True)
+edge_option = webdriver.EdgeOptions()
+edge_option.add_experimental_option("detach", True)
 
-driver = webdriver.Chrome(service = Service(ChromeDriverManager().install()), options = chrome_option)
+driver = webdriver.Edge(service = Service(EdgeChromiumDriverManager().install()), options = edge_option)
 
 driver.get("https://www.foundit.in/")
 driver.maximize_window()
