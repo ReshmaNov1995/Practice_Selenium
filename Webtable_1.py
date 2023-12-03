@@ -8,22 +8,22 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from selenium.webdriver.edge.service import Service
 
-chrome_option = webdriver.EdgeOptions()
-chrome_option.add_experimental_option("detach", True)
+edge_option = webdriver.EdgeOptions()
+edge_option.add_experimental_option("detach", True)
 
-driver = webdriver.Edge(service = Service(EdgeChromiumDriverManager().install()), options = chrome_option)
+driver = webdriver.Edge(service = Service(EdgeChromiumDriverManager().install()), options = edge_option)
 
 driver.get("https://testautomationpractice.blogspot.com/")
 
 driver.maximize_window()
 
-# # count no.of.rows & columns
-#
+# count no.of.rows & columns
+
 row = driver.find_elements(By.XPATH, "//table[@name='BookTable']//tr") # relative xpath
 noofrows = len(row)
 # print(noofrows)
-#
-# # Columns will have header
+
+# Columns will have header
 column = driver.find_elements(By.XPATH, "//table[@name='BookTable']//th")
 noofcolumns = len(column)
 # print(noofcolumns)

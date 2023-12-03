@@ -1,11 +1,11 @@
-import psycopg2 # Postgres
+import psycopg2 # Posgres
 import openpyxl
 from Excel_operations import Excel_Utility01
 
 connection=psycopg2.connect(host="62.171.183.83",database="ETICA_01-08-2023",user="postgres",password="pg@123",port="5433")
 print(connection)
 
-connection.autocommit=True # To perform in Actual DB
+# connection.autocommit=True # To perform in Actual DB
 cursor=connection.cursor()
 cursor.execute("select * from users;")
 users=cursor.fetchall() # To fetch all the data

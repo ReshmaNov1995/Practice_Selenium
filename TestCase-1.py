@@ -41,6 +41,7 @@ driver=webdriver.Edge(service = Service(EdgeChromiumDriverManager().install()), 
 # driver = webdriver.Chrome()
 
 driver.get("https://admin-demo.nopcommerce.com/login")
+driver.maximize_window()
 
 email = driver.find_element(By.ID, "Email")
 email.clear()
@@ -55,6 +56,7 @@ loginbutton.click()
 
 expectedtitle = "Dashboard / nopCommerce administration"
 actualtitle = driver.title
+
 
 if expectedtitle == actualtitle:
     print("Captured Title is "+actualtitle)

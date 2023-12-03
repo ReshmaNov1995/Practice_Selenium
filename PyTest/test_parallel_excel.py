@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 
 
-sec=4
+# sec=4
 def xldata():
     excel_path = "E:\Myn\kk.xlsx"
 

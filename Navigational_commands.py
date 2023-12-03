@@ -9,6 +9,7 @@ driver = webdriver.Chrome(service = service_obj)
 driver.get("https://www.snapdeal.com")
 driver.get("https://www.amazon.com")
 
+
 # driver.back()
 # driver.forward()
 # driver.refresh()
